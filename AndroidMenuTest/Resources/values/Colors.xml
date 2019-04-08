@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="DarkBlue">#3555C3</color>
+    <color name="DarkGray">#4A4A4A</color>
+    <color name="LightGray">#FBFCFD</color>
+    <color name="DarkOrange">#FFAF49</color>
+    <color name="StrongGray">#979797</color>
+    <color name="MediumGray">#EFEFEF</color>
+    <color name="MediumPink">#F54162</color>
+    <color name="MediumBlue">#039BE5</color>
+    <color name="RegularGray">#9B9B9B</color>
+    <color name="MediumGreen">#68C700</color>
+    <color name="RegularBlack">#000000</color>   
+    <color name="RegularWhite">#FFFFFF</color>
+    <color name="SeparatorCell">#F1EDED</color>
+    <color name="MediumLightGray">#DEDEDE</color>
+    <color name="BlackTransparent">#B3000000</color>
+    <color name="Green">#00ff00</color>
+    <color name="Red">#ff0000</color>
+     <color name="navy">#000080</color>
+</resources>

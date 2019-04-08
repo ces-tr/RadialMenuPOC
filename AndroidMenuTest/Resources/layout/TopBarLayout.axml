@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/DarkBlue"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navbar_height"
+    android:orientation="horizontal">
+    
+    <ImageButton
+        android:id="@+id/navbar_btnBack"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_chevron_left"
+        style="@style/navbaritems" />
+    
+    <TextView
+        android:id="@+id/navbar_lblTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/topbar_title_leftmargin"
+        android:layout_marginLeft="@dimen/topbar_title_leftmargin"
+        style="@style/navbarlbls" />
+    
+    
+</LinearLayout>

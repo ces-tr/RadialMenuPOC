@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+            >
+       <include
+                layout="@layout/topbarlayout" />
+       <TextView
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/home_headertext"
+            android:textSize="@dimen/font_20" 
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+        />
+            
+        <TextView
+           android:id="@+id/txttime"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:text="17:20"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+        />
+        
+        <android.support.v7.widget.CardView 
+            android:layout_gravity="center_horizontal"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="10dp"
+            android:shape="ring"
+            android:thicknessRatio= "1.9"
+            android:layout_marginTop= "20dp"
+            android:layout_marginBottom= "20dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_margin="5dp"
+            card_view:contentPadding="0dp"
+            card_view:cardCornerRadius="160dp"
+            card_view:cardPreventCornerOverlap="false"
+            
+        
+        >
+       <refractored.controls.CircleImageView 
+                
+            android:id="@+id/imageViewdog"
+            android:src="@drawable/dog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+        
+            
+ </android.support.v7.widget.CardView>
+        
+    <Button android:id="@+id/btnMenu"
+                android:layout_gravity="center"
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/hello" 
+                
+                    />
+    </LinearLayout>
+    
+    <vapolia.RealtimeBlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:realtimeBlurRadius="0dp"
+        android:visibility="gone"
+    />
+    
+    <ImageView 
+        android:id="@+id/imgMenuBack"
+        android:src="@drawable/menuback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+    />
+    
+    <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:id="@+id/btnView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list"
+            app:fabSize="normal"
+            android:tint="@color/navy"
+            android:visibility="gone"
+            android:tag="topright"
+    /> 
+    <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:id="@+id/btnView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications"
+            app:fabSize="normal"
+            android:tint="@color/navy"
+            android:visibility="gone"
+            android:tag="topleft"
+    /> 
+    <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:id="@+id/btnView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings"
+            app:fabSize="normal"
+            android:tint="@color/navy"
+            android:visibility="gone"
+            android:tag="bottomleft"
+    /> 
+    
+    <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:id="@+id/btnView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            app:fabSize="normal"
+            android:tint="@color/navy"
+            android:visibility="gone"
+            android:tag="bottomright"
+    /> 
+    
+    <!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal" >
+
+    <android.support.design.widget.FloatingActionButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:id="@+id/btnProfile"
+                
+                android:src="@drawable/ic_profile"
+                app:fabSize="normal"
+                android:scaleType="center"
+                android:tint="@color/navy"
+                app:backgroundTint="@color/DarkOrange"
+                android:visibility="gone"/>
+    </LinearLayout>-->
+    <android.support.design.widget.FloatingActionButton
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:id="@+id/btnProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile"
+                
+                android:scaleType="fitXY"
+                android:tint="@color/navy"
+                app:backgroundTint="@color/DarkOrange"
+                android:visibility="gone"
+                app:fabCustomSize="80dp"
+            />
+</FrameLayout>

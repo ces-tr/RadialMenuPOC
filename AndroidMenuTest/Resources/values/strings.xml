@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Show Menu</string>
+    <string name="app_name">AndroidMenuTest</string>
+    <string name="home_headertext">Hello World, it is now:</string>
+</resources>
